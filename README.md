@@ -8,7 +8,7 @@ Landing Page desarrollada con **HTML5**, **TailwindCSS** y **JavaScript Vanilla*
 
 [https://landing-page-async-javascript/](https://landing-page-async-javascript.pablogarciajc.com/)
 
-| ![Imagen 1](https://pablogarciajc.com/wp-content/uploads/2025/09/pokedex_1.webp) | ![Imagen 2](https://pablogarciajc.com/wp-content/uploads/2025/09/pokedex_2.webp) |
+| ![Imagen 1](https://pablogarciajc.com/wp-content/uploads/2025/09/landing-page-pokeapi-11_11.webp) | ![Imagen 2](https://pablogarciajc.com/wp-content/uploads/2025/09/landing-page-pokeapi-22_11.webp) |
 |-----------|-----------|
 
 ---
