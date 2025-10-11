@@ -64,12 +64,6 @@ build:
 stop:
 	$(DOCKER_COMPOSE) stop
 
-.PHONY: install-dependencies
-install-dependencies:
-	$(DOCKER_COMPOSE) exec landing_page_async_javascript git config --global --add safe.directory /var/www/html
-	$(DOCKER_COMPOSE) exec landing_page_async_javascript composer require monolog/monolog
-	$(DOCKER_COMPOSE) exec landing_page_async_javascript composer require --dev phpunit/phpunit ^11
-
 .PHONY: clean-docker
 clean-docker:
 	sudo docker rmi -f $$(sudo docker images -q) || true
