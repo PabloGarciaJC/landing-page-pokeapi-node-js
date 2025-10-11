@@ -29,7 +29,7 @@ npm-build:
 
 .PHONY: print-urls
 print-urls:
-	@echo "## Acceso a la Aplicación:   http://localhost:8081/dist/"
+	@echo "## Acceso a la Aplicación:   http://localhost:8081/"
 	@echo "## Acceso a PhpMyAdmin:      http://localhost:8082/"
 
 ## ---------------------------------------------------------
@@ -83,6 +83,13 @@ shell:
 .PHONY: npm-init
 npm-init:
 	$(DOCKER_COMPOSE) exec --user pablogarciajc landing_page_async_javascript  npm init -y
+
+## ---------------------------------------------------------
+## Build para producción
+## ---------------------------------------------------------
+.PHONY: npm-build
+npm-build:
+	$(DOCKER_COMPOSE) exec landing_page_async_javascript npm run build
 
 
 

@@ -1,9 +1,9 @@
-
 import '../style.css';       // tus estilos globales
 import 'pokemon-card-component';
 
 const API = 'https://pokeapi.co/api/v2/pokemon?limit=100';
 const container = document.getElementById('pokemon-container');
+const loader = document.getElementById('loader');
 
 async function fetchData(url) {
   const res = await fetch(url);
@@ -27,7 +27,17 @@ async function fetchData(url) {
       })
     );
 
-    const selectedTypes = ['electric', 'water', 'bug', 'fire', 'poison', 'flying', 'ground', 'psychic', 'rock'];
+    const selectedTypes = [
+      'electric',
+      'water',
+      'bug',
+      'fire',
+      'poison',
+      'flying',
+      'ground',
+      'psychic',
+      'rock'
+    ];
 
     selectedTypes.forEach(type => {
       const list = pokemons.filter(p => p.types.includes(type)).slice(0, 4);
@@ -70,9 +80,11 @@ async function fetchData(url) {
         }
       });
     });
-
   } catch (error) {
     console.error(error);
     container.innerHTML = `<p class="text-red-500">Error al cargar los Pokémon</p>`;
+  } finally {
+    // 👇 Cuando todo termina (éxito o error), se oculta el loader
+    if (loader) loader.style.display = 'none';
   }
 })();

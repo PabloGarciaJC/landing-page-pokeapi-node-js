@@ -1,3 +1,36 @@
 @keyframes float {0%, 100% {transform: translateY(0);} 50% {transform: translateY(-15px);}}
 .animate-float {animation: float 2s ease-in-out infinite;}
 .animate-float-delay {animation: float 2s ease-in-out infinite 1s;}
+
+/* Animación de rotación del texto */
+/* Animación de rotación 3D del texto */
+/* Spinner circular */
+/* Spinner circular multicolor */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loader-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #6366f1,   /* indigo-500 */
+    #8b5cf6,   /* purple-500 */
+    #ec4899,   /* pink-500 */
+    #facc15,   /* amarillo Pokémon */
+    #6366f1
+  );
+  -webkit-mask: radial-gradient(farthest-side, #000 90%, transparent 100%) content-box;
+  mask: radial-gradient(farthest-side, #000 90%, transparent 100%) content-box;
+  padding: 6px;
+  box-sizing: border-box;
+  animation: spin 1s linear infinite;
+}
+
+/* Texto con gradiente */
+.loader-text {
+  background: linear-gradient(90deg, #6366f1, #8b5cf6, #ec4899, #facc15);
+}
+
+
