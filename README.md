@@ -1,4 +1,4 @@
-# Landing Page: Pokeapi  (Node + JavaScript)
+# Landing Page Pokeapi (Node + JavaScript)
 
 Landing Page desarrollada con **HTML5**, **TailwindCSS** y **JavaScript Vanilla**, utilizando **Node.js** como entorno de desarrollo para gestionar dependencias y el proceso de construcción mediante **Webpack** y **Babel**.
 
