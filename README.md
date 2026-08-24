@@ -6,7 +6,7 @@ Landing Page desarrollada con **HTML5**, **TailwindCSS** y **JavaScript Vanilla*
 
 ## Demo del Proyecto
 
-[https://landing-page-async-javascript/](https://landing-page-async-javascript.pablogarciajc.com/)
+[https://landing-page-async-javascript/](https://landing-page-pokeapi.pablogarciajc.com/)
 
 | ![Imagen 1](https://pablogarciajc.com/wp-content/uploads/2025/09/landing-page-pokeapi-11_11.webp) | ![Imagen 2](https://pablogarciajc.com/wp-content/uploads/2025/09/landing-page-pokeapi-22_11.webp) |
 |-----------|-----------|
